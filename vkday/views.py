@@ -6,7 +6,7 @@ from django.template import loader
 from .models_view import Onedayk
 
 def index(request):
-    latest_onedayk_list = Onedayk.objects.order_by('-vdate')[:5]
+    latest_onedayk_list = Onedayk.objects.order_by('-vdate')[:3]
     template = loader.get_template('vkday/index.html')
     context = {
         'latest_onedayk_list': latest_onedayk_list,

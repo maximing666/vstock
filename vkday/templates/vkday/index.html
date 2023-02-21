@@ -9,8 +9,10 @@
             <table border="1">
             {% for onedayk in latest_onedayk_list %}
                 <tr>
-                    <td>{{ onedayk.vdate| date:'Y-m-d' }}</td>
-                    <td>{{onedayk.vtext }}</td>
+                    <td width="25%">{{ onedayk.vdate| date:'Y-m-d' }}</td>
+                    <td>
+                        {{ onedayk.vtext }}
+                    </td>
                 </tr>
             {% endfor %}
             </table>
