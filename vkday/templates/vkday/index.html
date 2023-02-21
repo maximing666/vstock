@@ -6,13 +6,16 @@
     </head>
     <body>
         {% if latest_onedayk_list %}
-            <ul>
+            <table border="1">
             {% for onedayk in latest_onedayk_list %}
-                <li><a href="/vkday/{{ onedayk.id }}/">{{ onedayk.vdate }} : {{onedayk.vtext }}</a></li>
+                <tr>
+                    <td>{{ onedayk.vdate| date:'Y-m-d' }}</td>
+                    <td>{{onedayk.vtext }}</td>
+                </tr>
             {% endfor %}
-            </ul>
+            </table>
         {% else %}
             <p>No polls are available.</p>
         {% endif %}
     </body>
-</html>
+    </html>
