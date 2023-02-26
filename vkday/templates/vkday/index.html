@@ -11,7 +11,7 @@
                 <tr>
                     <td width="25%">{{ onedayk.vdate| date:'Y-m-d' }}</td>
                     <td>
-                        {{ onedayk.vtext }}
+                        {{ onedayk.vtext|safe }}
                     </td>
                 </tr>
             {% endfor %}

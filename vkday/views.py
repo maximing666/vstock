@@ -6,6 +6,7 @@ from django.template import loader
 from .models_view import Onedayk
 
 def index(request):
+    #按vdate字段倒序，选取3条记录。
     latest_onedayk_list = Onedayk.objects.order_by('-vdate')[:3]
     template = loader.get_template('vkday/index.html')
     context = {
