@@ -77,11 +77,11 @@ WSGI_APPLICATION = 'vstock.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'HOST': '127.0.0.1',
+        'HOST': '192.168.1.100',
         'NAME': 'vstock',
-        'USER': 'vstocker',
-        'PASSWORD': '4321!@#$1234',
-        'PORT': '3306',
+        'USER': 'root',
+        'PASSWORD': '64HEaoEB_XAhasZuV2zZ',
+        'PORT': '13306',
 
     }
 }
