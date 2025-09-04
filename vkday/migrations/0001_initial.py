@@ -19,7 +19,7 @@ class Migration(migrations.Migration):
                 ('vtext', models.CharField(max_length=1024)),
             ],
             options={
-                'db_table': 'view_dayk_one',
+                'db_table': 'viewrecommend',
             },
         ),
     ]
