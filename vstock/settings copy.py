@@ -80,7 +80,7 @@ DATABASES = {
         'HOST': '192.168.1.100',
         'NAME': 'vstock',
         'USER': 'root',
-        'PASSWORD': '64HEaoEB_XAhasZuV2zZ',
+        'PASSWORD': 'password',
         'PORT': '13306',
 
 

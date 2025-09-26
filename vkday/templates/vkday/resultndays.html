@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <title>vkday</title>
+    </head>
+    <body>
+        {% if latest_vkdayn_list %}
+            <table border="1">
+            {% for item in latest_vkdayn_list %}
+                <tr>
+                    <td width="25%" valign="top" style="font-size: 30pt">{{ item.vdate| date:'Y-m-d' }}</td>
+                    <td>
+                        {{ item.vtext|safe }}
+                    </td>
+                </tr>
+            {% endfor %}
+            </table>
+        {% else %}
+            <p>No polls are available.</p>
+        {% endif %}
+    </body>
+    </html>
